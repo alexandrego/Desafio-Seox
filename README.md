@@ -16,7 +16,7 @@ Desafio Seox
     - [x]  Instalar wordpress e o plugin Woocommerce em ambiente para apresentação dos resultados em reunião (seja localhost ou web).
     - [x]  Cadastrar 5 produtos.
     - [ ]  Realizar 2 pedidos.
-    - [ ]  Criar uma página no WordPress com o título 'Pedido'.
+    - [x]  Criar uma página no WordPress com o título 'Pedido'.
 - **PLUGINS**
     - a) **Desenvolver um plugin que ao finalizar um pedido no Woocommerce:**
         - [ ]  Deverá ser criado um metadata com o horário exato do "pagamento confirmado", ou seja, quando o status do pedido passou a ser "processing".
@@ -39,7 +39,7 @@ Desafio Seox
     - [ ]  Para isso, crie dois usuários no wordpress, acesse o ambiente ADMIN de posts com dois navegadores diferentes, cada um com um usuário e tente editar um mesmo post com o mesmo usuário. O sistema vai bloquear.
     - [ ]  Clonar esta função para uma “options pages”. Em outras palavras, é preciso bloquear o acesso simultâneo à edição de uma options pages seguindo a mesma lógica do bloqueio de posts, inclusive mantendo a opção de “assumir controle”.
 - **SETUP**
-    - [ ]  Instale o plugin Advanced Custom Fields.
+    - [x]  Instale o plugin Advanced Custom Fields.
     - [ ]  Siga o passo-a-passo para criar uma options page. [https://www.advancedcustomfields.com/resources/options-page/](https://www.advancedcustomfields.com/resources/options-page/)
 - **PLUGIN**
     - [ ]  Utilize somente um plugin (uma pasta com o plugin) para gerar a funcionalidade. Não altere o core do Wordpress.

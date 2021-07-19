@@ -5,5 +5,5 @@
     curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
     $resultado = json_decode(curl_exec($ch));
 
-    var_dump($resultado);
-?>
+    // var_dump($resultado);
+    ?>

@@ -1,7 +1,41 @@
+/* Importamos uma fonte do Google Fonts para usar em nosso projeto */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yomogi&display=swap');
+
+/* Resetamos as margens e espaçamentos de todo o projeto */
 *{
-    margin: 0;
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Manipulação do nosso menu principal */
+#menu-h ul {
+    float: right;
+    margin-top: -35px;
+    margin-right: 30px;
+    list-style: none;
     padding: 0;
 }
+#menu-h ul li {
+    display: inline;
+}
+#menu-h ul li a {
+    color: #FFF;
+    font-size: 18px;
+    padding: 20px;
+    display: inline-block;
+    text-decoration: none;
+    transition: background .4s;
+}
+#menu-h ul li a:hover {
+    background-color: white;
+    color: crimson;
+    border-radius: 4px;
+}
+
+/* Manipulação do cabeçalho do nosso projeto */
 #header {
     width: 100vw;
     height: 80px;
@@ -11,19 +45,228 @@
     font-size: 22px;
     font-weight: 600;
 }
+
+/* Manipulação da nossa logo */
 #logo {
-    width: 250px;
+    width: 230px;
+    height: 40px;
     padding: 20px;
-    margin: 0 0 0 25px;
+    margin: 0 0 0 35px;
+}
+#logo p {
+    font-family: 'Yomogi', cursive;
+    font-size: 30px;
+    color: white;
+}
+#link_logo {
+    text-decoration: none;
+}
+
+/* Manipulação da nossa capa de apresentação */
+#mostra_capa {
+    width: 100vw;
+}
+#capa {
+    width: 100vw;
+    height: 100vh;
+}
+#mostra_texto {
+    width: 380px;
+    float: right;
+    position: relative;
+    margin-top: -650px;
+    margin-right: 30px;
+}
+#texto {
+    font-family: 'Yomogi', cursive;
+    font-size: 80px;
+    font-weight: 600;
+    color: white;
+}
+.fade-in {
+	opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 2s;
+}
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+/* Manipula o corpo da loja */
+#menu_loja {
+    float: left;
+    left: 0;
+    position: fixed;
+    width: 200px;
+}
+
+/* Manipula menu lateral da loja */
+#filtro {
+    padding: 30px 0 0 20px;
+}
+#edita_link {
+    padding: 30px 0 0 20px;
+}
+#edita_link:hover {
+    padding: 30px 0 30px 20px;
+    background-color: rgb(241, 98, 98);
+    border-radius: 4px;
+    transition: .4s;
+    cursor: pointer;
+    color: white;
+}
+#filtra_pro {
+    text-decoration: none;
+    color: crimson;
+}
+
+/* Manipula produtos no corpo da loja */
+#lista_produtos_loja {
+    margin-left: 220px;
+}
+
+/* Manipulação do corpo do projeto */
+#loop_geral {
+    width: 90vw;
+    margin: 0 auto;
+}
+
+/* Manipula link do nome dos produtos */
+#loop_link {
+    text-decoration: none;
+    color: crimson;
+}
+
+/* Manipula a forma de exibição dos produtos */
+#loop_produto {
+    width: 200px;
+    /* height: 250px; */
+    margin: 20px;
+    padding: 1%;
+    display: inline-grid;
+}
+#loop_produto:hover {
+    -webkit-box-shadow:  inset 0 0 1em rgb(182, 179, 179);
+    -moz-box-shadow:     inset 0 0 1em rgb(182, 179, 179);
+    box-shadow:          inset 0 0 1em rgb(182, 179, 179);
+    border-radius: 5px;
+}
+
+/* Manipula a exibição das imagens */
+#loop_img {
+    width: 100%;
+    margin: 0 auto;
+}
+#mostra_img {
+    width: 180px;
+    border-radius: 5px;
+    border-top: solid 1px;
+    border-bottom: solid 1px;
+}
+
+/* Manipulação a exibição do preço */
+#loop_preco {
+    color: green;
+    margin: 20px 0 0 -5px;
+}
+#up_preco {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+#especialista {
+    width: 80%;
+    margin: 0 auto;
+}
+#mostra_titulo {
+    margin: 0 auto;
+    padding: 50px;
+    font-size: 26px;
+    font-weight: 600;
+}
+#wordpress {
+    width: 350px;
+    float: left;
+    margin-left: 100px;
+}
+#exibe_img {
+    width: 400px;
+}
+#php {
+    width: 250px;
+    float: left;
+    margin-top: 90px;
+    margin-left: 100px;
+}
+#btn_comprar {
+    width: 100px;
+    height: 30px;
+    margin: 80px 0 0 0;
+    cursor: pointer;
+    background-color: crimson;
+    border-radius: 5px;
+}
+#btn_comprar:hover { 
+    -webkit-box-shadow:   0 0 1em rgb(182, 179, 179);
+    -moz-box-shadow:      0 0 1em rgb(182, 179, 179);
+    box-shadow:           0 0 1em rgb(182, 179, 179);
+    border-radius: 5px;
+}
+#click_compra {
+    color: white;
+    font-size: 17px;
+    font-weight: 600;
+    padding: 4px 0 0 15px;
+}
+#btn_voltar {
+    width: 100px;
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+    margin: 25px 0 0 50px;
+}
+#retorna {
+    text-decoration: none;
+    color: crimson;
+}
+#icon_cart {
+    font-size: 20px;
+}
+/* #click_volta {
+    width: 100px;
+    padding: 8px 0 8px 30px;
+}
+#retorna {
+    text-decoration: none;
+    color: crimson;
+}
+#btn_voltar:hover {   
+    -webkit-box-shadow:   0 0 1em rgb(182, 179, 179);
+    -moz-box-shadow:      0 0 1em rgb(182, 179, 179);
+    box-shadow:           0 0 1em rgb(182, 179, 179);
+    border-radius: 5px;
+} */
+#cms {
+    clear: both;
+    padding: 50px;
+    font-size: 20px;
+    line-height: 1.5;
 }
 #footer {
     width: 100vw;
     height: 80px;
     background-color: crimson;
     color: white;
-    font-family: 'Times New Roman', Times, serif;
     font-size: 22px;
     font-weight: 600;
+    clear: both;
 }
 #logo_footer {
     width: 250px;

@@ -1,3 +1,5 @@
 list_products.php
 find_product.php
 checkout_product.php
+conexao.php
+processa_pedido.php

@@ -259,6 +259,34 @@
     font-size: 20px;
     line-height: 1.5;
 }
+#saudacoes_checkout {
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+}
+#saudacoes_checkout h2 {
+    text-align: center;
+    padding: 20px;
+}
+#form {
+    width: 250px;
+    display: inline-block;
+    margin: 15px;
+}
+#ident_checkout_product {
+    /* width: 350px; */
+    display: inline-block;
+    margin: 15px;
+}
+#img_produto_checkout {
+    /* width: 90px; */
+    padding: 10px;
+    border-left: solid 1px crimson;
+    display: inline-block;
+}
+#mostra_img_checkout {
+    width: 100px;
+}
 #footer {
     width: 100vw;
     height: 80px;

@@ -13,7 +13,7 @@
         require_once ('header.php');
 
         ?>
-            <div>
+            <div id="saudacoes_checkout">
                 <h2>Olá, Gostariamos de lhe conhecer</h2>
             </div>
 
@@ -89,18 +89,18 @@
                     <img src="<?php echo $imagem->src; ?>" id="mostra_img_checkout" />
                 </div>
                 
-                <div id="nome_produto_checkout">
+                <div id="img_produto_checkout">
                     <p><?php echo $resultado->name; ?></p>
                 </div>
 
-                <div id="preco_produto_checkout">
+                <div id="img_produto_checkout">
                     <p>
                         <?php echo 'R$ <span id="up_preco">' . number_format($resultado->price,2,',','.') . '</span></br>';?>
                     </p>
                     </a>
                 </div>
 
-                <div id="quant_produto_checkout">
+                <div id="img_produto_checkout">
                     <label>Quantidade</label>
                     <select name="quant_produto" id="quant_produto" onchange="calcula_total()" >
                         <option value="1">1</option>
@@ -116,7 +116,7 @@
                     </select>
                 </div>
 
-                <div id="quant_produto_checkout">
+                <div id="img_produto_checkout">
                     <label>Total </label>
                     <span id='mostra_soma_total'><?php echo 'R$ ' . number_format($resultado->price,2,',','.') . '</br>';?></span>
                 </div>

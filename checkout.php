@@ -14,11 +14,11 @@
 
         ?>
             <div id="saudacoes_checkout">
-                <h2>Olá, Gostariamos de lhe conhecer</h2>
+                <h2>Olá, preencha os dados abaixo para concluir a compra</h2>
             </div>
             <div id="form_geral">
             <div id="form">
-                <form action="routes/checkout_product.php" method="post">
+                <form action="envia.php" method="post">
 
                     <div>
                         <h2>Informações pessoais</h2>
@@ -140,6 +140,7 @@
                     
                 <div id="div_btn_comprar">
                     <div id="centraliza_btn_compra">
+                        <input type="hidden" name="product_price" id="product_price" value="<?php echo $resultado->price;?>" />
                         <input type="hidden" name="product_id" id="product_id" value="<?php echo $recebe_produto;?>" />
                         <input type="submit" name="btn_fim_compra" id="btn_fim_compra" value="Finalizar compra" />
                     </div>

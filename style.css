@@ -147,7 +147,6 @@
 /* Manipula a forma de exibição dos produtos */
 #loop_produto {
     width: 200px;
-    /* height: 250px; */
     margin: 20px;
     padding: 1%;
     display: inline-grid;
@@ -213,7 +212,7 @@
     background-color: crimson;
     border-radius: 5px;
 }
-#btn_comprar:hover { 
+#btn_comprar:hover {
     -webkit-box-shadow:   0 0 1em rgb(182, 179, 179);
     -moz-box-shadow:      0 0 1em rgb(182, 179, 179);
     box-shadow:           0 0 1em rgb(182, 179, 179);
@@ -239,20 +238,6 @@
 #icon_cart {
     font-size: 20px;
 }
-/* #click_volta {
-    width: 100px;
-    padding: 8px 0 8px 30px;
-}
-#retorna {
-    text-decoration: none;
-    color: crimson;
-}
-#btn_voltar:hover {   
-    -webkit-box-shadow:   0 0 1em rgb(182, 179, 179);
-    -moz-box-shadow:      0 0 1em rgb(182, 179, 179);
-    box-shadow:           0 0 1em rgb(182, 179, 179);
-    border-radius: 5px;
-} */
 #cms {
     clear: both;
     padding: 50px;
@@ -268,25 +253,87 @@
     text-align: center;
     padding: 20px;
 }
+.campos_field {
+    width: 345px;
+    height: 40px;
+    border: none;
+    color: crimson;
+}
+#form_geral {
+    width: 80%;
+    margin: 0 auto;
+}
 #form {
-    width: 250px;
-    display: inline-block;
-    margin: 15px;
+    width: 350px;
+    height: 470px;
+    float: left;
+    margin-left: 80px;
+    line-height: 30px;
+}
+#form_info_entrega {
+    width: 350px;
+    height: 470px;
+    float: right;
+    margin-right: 80px;
+    margin-bottom: 20px;
+    line-height: 30px;
+}
+#add_detalhe_form {
+    margin-top: 20px;
+    border-top: 1px solid crimson;
+    border-radius: 4px;
 }
 #ident_checkout_product {
-    /* width: 350px; */
-    display: inline-block;
-    margin: 15px;
+    width: 80%;
+    margin: 0 auto;
+    clear: both;
+}
+#info_produto {
+    margin-top: 20px;
+    border-top: 1px solid crimson;
+    border-radius: 4px;
 }
 #img_produto_checkout {
-    /* width: 90px; */
-    padding: 10px;
-    border-left: solid 1px crimson;
-    display: inline-block;
+    width: 190px;
+    margin-top: 20px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    float: left;
 }
 #mostra_img_checkout {
     width: 100px;
 }
+#div_btn_comprar {
+    clear: both;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#centraliza_btn_compra {
+    width: 201px;
+    margin: 0 auto;
+}
+#btn_fim_compra {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 200px;
+    height: 40px;
+    cursor: pointer;
+    color: white;
+    background-color: crimson;
+    border-radius: 5px;
+    border: none;
+}
+#btn_fim_compra:hover {
+    opacity: 0.6;
+    transition: 0.4s;
+    -webkit-box-shadow:   0 0 1em rgb(100, 100, 100);
+    -moz-box-shadow:      0 0 1em rgb(100, 100, 100);
+    box-shadow:           0 0 1em rgb(100, 100, 100);
+}
+    
 #footer {
     width: 100vw;
     height: 80px;
@@ -300,4 +347,23 @@
     width: 250px;
     padding: 20px;
     margin: 0 0 0 25px;
+}
+
+/* Trabalhando um pouco de responsividade */
+@media screen and (max-width: 1900px) {
+    #mostra_texto {
+        margin-top: -610px;
+    }
+    /* Manipulação do corpo do projeto */
+    #loop_geral {
+        width: 85vw;
+    }
+    /* Manipula a forma de exibição dos produtos */
+    #loop_produto {
+        width: 180px;
+        margin: 15px;
+    }
+    #mostra_img {
+        width: 160px;
+    }
 }

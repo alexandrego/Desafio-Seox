@@ -16,67 +16,78 @@
             <div id="saudacoes_checkout">
                 <h2>Olá, Gostariamos de lhe conhecer</h2>
             </div>
-
+            <div id="form_geral">
             <div id="form">
                 <form action="routes/checkout_product.php" method="post">
+
+                    <div>
+                        <h2>Informações pessoais</h2>
+                    </div>               
+                    
+                    <div id="add_detalhe_form">
                     <div id="field_form">
-                        <label>Primeiro nome</label>
-                        <input type="text" name="billing_first_name" id="billing_first_name" placeholder="Digite aqui seu nome" required />
+                        <label>Primeiro nome</label></br>
+                        <input type="text" name="billing_first_name" id="billing_first_name" class="campos_field" placeholder="Digite aqui seu nome" required />
                     </diV>
 
                     <div id="field_form">                    
-                        <label>Último nome</label>
-                        <input type="text" name="billing_last_name" id="billing_last_name" placeholder="Digite aqui seu último nome" required />
+                        <label>Último nome</label></br>
+                        <input type="text" name="billing_last_name" id="billing_last_name" class="campos_field" placeholder="Digite aqui seu último nome" required />
                     </div>
                     
                     <div id="field_form">
-                        <label>CPF</label>
-                        <input type="text" name="billing_cpf" id="billing_cpf" placeholder="Digite aqui seu CPF" required />
+                        <label>CPF</label></br>
+                        <input type="text" name="billing_cpf" id="billing_cpf" class="campos_field" placeholder="Digite aqui seu CPF" required />
                     </div>
                     
                     <div id="field_form">
-                        <label>Celular</label>
-                        <input type="text" name="billing_cellphone" id="billing_cellphone" placeholder="Digite aqui seu número com WhatsApp" required />
+                        <label>Celular</label></br>
+                        <input type="text" name="billing_cellphone" id="billing_cellphone" class="campos_field" placeholder="Digite aqui seu número com WhatsApp" required />
                     </div>
                     
                     <div id="field_form">
-                        <label>E-mail</label>
-                        <input type="text" name="billing_email" id="billing_email" placeholder="Digite aqui seu melhor e-mail" required />
+                        <label>E-mail</label></br>
+                        <input type="text" name="billing_email" id="billing_email" class="campos_field" placeholder="Digite aqui seu melhor e-mail" required />
                     </div>
-
+                    </div>
+            </div>
+            <div id="form_info_entrega">
                     <div>
                         <h2>Informações para entrega</h2>
                     </div>
                     
+                    <div id="add_detalhe_form">
                     <div id="field_form">
-                        <label>Endereço</label>
-                        <input type="text" name="billing_address" id="billing_address" placeholder="Digite aqui o nome da sua Rua, Av. e etc" required />
+                        <label>Endereço</label></br>
+                        <input type="text" name="billing_address" id="billing_address" class="campos_field" placeholder="Digite aqui o nome da sua Rua, Av. e etc" required />
                     </div>
                     
                     <div id="field_form">
-                        <label>Número</label>
-                        <input type="text" name="billing_number" id="billing_number" placeholder="Digite aqui o número da sua casa" required />
+                        <label>Número</label></br>
+                        <input type="text" name="billing_number" id="billing_number" class="campos_field" placeholder="Digite aqui o número da sua casa" required />
                     </div>
                     
                     <div id="field_form">
-                        <label>Bairro</label>
-                        <input type="text" name="billing_neighborhood" id="billing_neighborhood" placeholder="Digite aqui seu bairro" required />
+                        <label>Bairro</label></br>
+                        <input type="text" name="billing_neighborhood" id="billing_neighborhood" class="campos_field" placeholder="Digite aqui seu bairro" required />
                     </div>
                     
                     <div id="field_form">
-                        <label>Cidade</label>
-                        <input type="text" name="billing_city" id="billing_city" placeholder="Digite aqui sua cidade" required />
+                        <label>Cidade</label></br>
+                        <input type="text" name="billing_city" id="billing_city" class="campos_field" placeholder="Digite aqui sua cidade" required />
                     </div>
                     
                     <div id="field_form">
-                        <label>Estado</label>
-                        <input type="text" name="billing_state" id="billing_state" placeholder="Digite aqui o estado em que você mora" required />
+                        <label>Estado</label></br>
+                        <input type="text" name="billing_state" id="billing_state" class="campos_field" placeholder="Digite aqui o estado em que você mora" required />
                     </div>
                     
                     <div id="field_form">
-                        <label>CEP</label>
-                        <input type="text" name="billing_postcode" placeholder="Digite aqui o CEP da sua rua" id="billing_postcode" required />
+                        <label>CEP</label></br>
+                        <input type="text" name="billing_postcode" class="campos_field" placeholder="Digite aqui o CEP da sua rua" id="billing_postcode" required />
                     </div>
+                    </div>
+            </div>
             </div>
         <?php
 
@@ -84,7 +95,11 @@
         
         ?>
             <div id="ident_checkout_product">
+                <div>
+                    <h2>Informações da compra</h2>
+                </div>
 
+                <div id="info_produto">
                 <div id="img_produto_checkout">
                     <img src="<?php echo $imagem->src; ?>" id="mostra_img_checkout" />
                 </div>
@@ -95,7 +110,7 @@
 
                 <div id="img_produto_checkout">
                     <p>
-                        <?php echo 'R$ <span id="up_preco">' . number_format($resultado->price,2,',','.') . '</span></br>';?>
+                        <?php echo 'Unidade R$ <span id="up_preco">' . number_format($resultado->price,2,',','.') . '</span></br>';?>
                     </p>
                     </a>
                 </div>
@@ -120,11 +135,14 @@
                     <label>Total </label>
                     <span id='mostra_soma_total'><?php echo 'R$ ' . number_format($resultado->price,2,',','.') . '</br>';?></span>
                 </div>
+                </div>
             </div>
                     
-                <div id="field_form">
-                    <input type="hidden" name="product_id" id="product_id" value="<?php echo $recebe_produto;?>" />
-                    <input type="submit" name="btn_fim_compra" id="btn_fim_comra" value="Finalizar compra" />
+                <div id="div_btn_comprar">
+                    <div id="centraliza_btn_compra">
+                        <input type="hidden" name="product_id" id="product_id" value="<?php echo $recebe_produto;?>" />
+                        <input type="submit" name="btn_fim_compra" id="btn_fim_compra" value="Finalizar compra" />
+                    </div>
                 </div>
             </form>
         <?php

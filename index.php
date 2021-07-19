@@ -1,20 +1,43 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="favicon.png">
-    <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
-    <title>Desafio Seox</title>
-</head>
-<body>
     <?php
-    include 'pages/header.php';
+        require_once ('variaveis.php');
 
-    include 'routes/list_products.php';
+        require_once ('head.php');
 
-    include 'pages/footer.php';
+        require_once ('header.php');
+        
+        require_once ('slide.php');
+
+        require_once ('routes/list_products.php');
+
+        ?>
+        <div id="loop_geral">
+            <?php
+
+            foreach ($resultado as $produto) {
+                // var_dump($produto);
+
+                foreach ($produto->images as $imagem) {
+
+                }
+                ?>
+                <a href="product.php?product=<?php echo $produto->id; ?>" id="loop_link">
+                    <div id="loop_produto">
+                        <div id="loop_img">
+                            <img src="<?php echo $imagem->src; ?>" id="mostra_img" />
+                        </div>
+                        <?php
+                            echo $produto->name . '</br>';                    
+                        ?>
+                        <p id="loop_preco">
+                            <?php echo 'R$ <span id="up_preco">' . number_format($produto->price,2,',','.') . '</span></br>';?>
+                        </p>
+                    </div>
+                </a>
+                <?php
+            }
+            ?>
+            </div>
+            <?php
+
+        require_once ('footer.php');
     ?>
-</body>
-</html>

@@ -25,7 +25,7 @@ Desafio Seox
         - [ ]  Um shortcode [woocommerce-pedidos] = deverá renderizar uma table com os pedidos do woocommerce (número pedido, status, data, valor quantidade de itens, horário do pagamento confirmado).
         - [ ]  Um shortcode [woocommerce-top-itens] = deverá  renderizar uma table com os 5 itens mais vendidos no Woocommerce (id item, descrição, valor). (EXTERNAL FUNCTIONS).
         - [ ]  Criar uma página independente do Wordpress, utilizando uma tecnologia/framework distinta do Wordpress. Para esta escolha, considere que a página poderá vir a receber centenas de milhares de acessos simultâneos e justifique, em um comentário no arquivo principal do fonte, a escolha da tecnologia.
-        - [ ]  Esta página, então, deverá se conectar com a REST API do Woocommerce e listar os produtos em um formato pronto de "shop page" que seja compatível com a escolha da tecnologia. Para construção desta página você deve aproveitar os códigos disponíveis em Documentações/APIs e as fontes bibliográficas deste conteúdo deverão ser listadas justo a justificativa da tecnologia.
+        - [ ]  Esta página, então, deverá se conectar com a REST API do Woocommerce e listar os produtos em um formato pronto de "shop page" que seja compatível com a escolha da tecnologia. Para construção desta página você deve aproveitar os códigos disponíveis em Documentações/APIs e as fontes bibliográficas deste conteúdo deverão ser listadas junto a justificativa da tecnologia.
 - **ENTREGÁVEL**
     - [ ]  1) Um arquivo compactado com os arquivos utilizados para criar a solução do problema apresentado.
     - [ ]  2) Disponibilizar as aplicações em ambiente online. Caso você não consiga um servidor gratuito, solicite para nós um ambiente para instalar as aplicações. **
@@ -45,4 +45,4 @@ Desafio Seox
     - [ ]  Utilize somente um plugin (uma pasta com o plugin) para gerar a funcionalidade. Não altere o core do Wordpress.
 - **ENTREGÁVEL**
     - [ ]  1) Um arquivo compactado com os arquivos utilizados para criar a solução do problema apresentado.
-    - [ ]  2) Disponibilizar as aplicações em ambiente online. Caso você não consiga um servidor gratuito, solicite para nós um ambiente para instalar as aplicações. **                                       --- Uma alternativa é gravar a apresentação em localhost e enviar um vídeo!
+    - [ ]  2) Disponibilizar as aplicações em ambiente online. Caso você não consiga um servidor gratuito, solicite para nós um ambiente para instalar as aplicações. **                --- Uma alternativa é gravar a apresentação em localhost e enviar um vídeo!

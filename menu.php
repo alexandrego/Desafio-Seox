@@ -14,7 +14,7 @@
             </li>
             
             <li>
-                <a href="#">
+                <a href="desafio.php">
                     <i class="fa fa-flag-checkered" id="icon_cart"></i> Sobre o Desafio
                 </a>
             </li>

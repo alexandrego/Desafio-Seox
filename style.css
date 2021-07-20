@@ -335,6 +335,10 @@
     -moz-box-shadow:      0 0 1em rgb(100, 100, 100);
     box-shadow:           0 0 1em rgb(100, 100, 100);
 }
+#mostra_desafio {
+    width: 80%;
+    margin: 0 auto;
+}
     
 #footer {
     width: 100vw;

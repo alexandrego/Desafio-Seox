@@ -15,7 +15,7 @@
     $prod_price     = $_POST['product_price'];
     $total          = $quant_prod*$prod_price;
     
-    $iniciar = curl_init('processa.php');
+    $iniciar = curl_init('routes/processa_pedido.php');
     curl_setopt($iniciar, CURLOPT_RETURNTRANSFER, true);
     $dados = array(
         'billing_first_name'    => $primeiro_nome,
@@ -35,9 +35,9 @@
         'product_id'            => $id_prod,
     );
 
-    // var_dump($dados);
-    curl_setopt($iniciar, CURLOPT_POST, true);
-    curl_setopt($iniciar, CURLOPT_POSTFIELDS, $dados);
-    curl_exec($iniciar);
-    curl_close($iniciar);
+     //var_dump($dados);
+     curl_setopt($iniciar, CURLOPT_POST, true);
+     curl_setopt($iniciar, CURLOPT_POSTFIELDS, $dados);
+     curl_exec($iniciar);
+     curl_close($iniciar);
 
